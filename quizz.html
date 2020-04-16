@@ -1,0 +1,65 @@
+<html>
+    <title>Quiz</title>
+    <body>
+        <script src="quiz.js">
+        <div id="q1">
+        <p>How old are you? </p>
+        <p>
+        <input type="button" value="Under 18" id="b1" onclick="age()" />
+        <input type="button" value="18-60" id="b2" onclick="age()" />
+        <input type="button" value="60+" id="b3" onclick="age()" />
+        </p>
+    </div>
+    <div id="q2" />
+        <p>
+            Are you feeling any of these symptoms? 
+        </p>
+        <p>
+            <input type="checkbox" id="c1" name="m1" value="Fever, chill or sweating" onclick="qu3()" />
+            <label for="m1">Fever, chill or sweating</label>
+            <input type="checkbox" id="c2" name="m2" value="Difficulty in Breathing" onclick="qu3()" />
+            <label for="m2">Difficulty in Breathing</label>
+            <input type="checkbox" id="c3" name="m3" value="New or worsening cough" onclick="qu3()" />   
+            <label for="m3">New or worsening cough</label>         
+            <input type="checkbox" id="c4" name="m4" value="Aching throughout the body" onclick="qu3()">
+            <label for="m4">Aching throughout the body</label>
+            <input type="checkbox" id="c5" name="n" value="None of the above">
+            <label for="n">None of the above</label>
+        </p>
+    </div>
+    <div id="q3">
+        <p>
+            Does any of these apply to you?
+        </p>
+        <p> 
+            <input type="checkbox" id="a1" name="d1" value="Extreme obesity" onclick="qu4()">
+            <label for="d1">Extreme obesity</label>
+            <input type="checkbox" id="a2" name="d2" value="Moderate to severe asthma or lung disease" onclick="qu4()">
+            <label for="d2">Moderate to severe asthma or lung disease</label>
+            <input type="checkbox" id="a3" name="d3" value="Cancer treatment or medicine causing immune suppression" onclick="qu4()">
+            <label for="d3">Cancer treatment or medicine causing immune suppression</label>
+            <input type="checkbox" id="a4" name="d4" value="Inherited immune deficiency or HIV" onclick="qu4()">
+             <label for="d4">Inherited immune deficiency or HIV</label>
+            <input type="checkbox" id="a5" name="d5" value="Serious Heart conditionss, such as Heart failure or prior heart attack" onclick="qu4()">
+            <label for="d5">Serious Heart conditionss, such as Heart failure or prior heart attack</label>
+            <input type="checkbox" id="a6" name="d6" value="Diabeties with complications" onclick="qu4()">
+            <label for="d6">Diabeties with complications</label>
+            <input type="checkbox" id="a0" name="d0" value="None of the above">
+            <label for="d0">None of the above</label>
+        </p>
+    </div>
+    <div id="q4">
+        <p>
+            In the last 14 days have you traveled Internationally?
+        </p>
+        <p>
+            <input type="button" id="e1" value="I have traveled Internationally" onclick="trav()">
+            <input type="button" id="e2" value="I have NOT traveled Internationally">
+        </p>
+    </div>
+        <p>
+            <input type="submit" value="Submit" onclick="chck()">
+        </p>
+    </script>
+    </body>
+</html>
